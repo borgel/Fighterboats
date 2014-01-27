@@ -1,0 +1,10 @@
+/Temp
+/obj
+/library
+*.csproj
+*.unityproj
+*.sln
+
+*.DS_Store
+*.un~
+
