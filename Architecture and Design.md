@@ -1,5 +1,14 @@
-Models
-======
+New (With Unity)
+================
+* looks like base things should all be prefabs (hero boats, creep, tower, shop)
+    * I think they can be customized per instance, but all the base functions of those things will be the same between instances. So DRY!
+* 
+
+
+
+
+Models (Classes)
+----------------
 * *MAKE UML*
     * http://stackoverflow.com/questions/168512/best-free-professional-looking-uml-tool
     * ArgoUML is installed. Try that
@@ -81,43 +90,6 @@ Models
     * execute moves
 
 
-Network Play
-============
-* hub and spoke
-    * spokes are clients
-    * hub is server console running on a machine
-* use protobufs?
-    * only between 1 kind of client, so not sure it really matters
-
-Playing
--------
-* each client calculates ALL FACETS of it's player's universe
-    * ship position
-    * projectile position
-    * items
-        * purchase order can go through hub for validation?
-    * fog visibility?
-    * player health
-    * if a projectile hits or not
-    * XP
-* when the client updates a trait (position, direction, purchase, health, hits, etc) send to hub, then broadcast to all clients
-* when each client receives an update, they update their internal representaitons of all models
-* server runs creeps, towers, and all NPCs
-* server manages timekeeping for match (battle rounds, creep spawns, time of day, etc)
-* server manages game state (start, stop, pause, round end)
-* server manages score
-* server can command clients to pause
-* server can broadcast messages/popups to players
-    * 'game over', etc
-
-Joining
--------
-* client connects to server (via IP/hostname first, broadcast later?)
-* server shows list of games (or just run 1 game always for now?)
-* server checks client build timestamp (as a version. Must match)
-* server tells client what map to load
-* server displays game start countdown
-* server starts/ends play
 
 What If Web Based
 -----------------
@@ -126,33 +98,8 @@ What If Web Based
 * should be nearly interchangible with normal desktop client builds
 
 
-UI
-==
-* https://github.com/libgdx/libgdx/wiki/Scene2d
-* maybe have central screen manager instead of drawing in all these different screens by manually instantiating them
-    * reuse camera, sprite batches, etc between screens
-    * manager receives inputs and send them to the screens. Swaps screens in and out
-    * needed? is this baked into framework already?
-        * or do we just do something in scene2D to do it
-    * 
-
-
-Menu's
-======
-* use scene2D.ui from GDX
-    * https://github.com/libgdx/libgdx/wiki/Scene2d.ui
-    * https://github.com/EsotericSoftware/tablelayout
-* intro screen
-    * settings
-        * graphics
-        * gameplay
-        * sound
-    * map select
-        * waiting room
-
-
 Random Notes
-============
+------------
 * physics
     * what if movement is governed by physics? IE boats have an acceleration. Could be worth trying
 * menu's in JSON files too?

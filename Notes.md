@@ -30,3 +30,8 @@ Fog of War
 * how?
 * Flood fill for max radius # around player?
 * check all points withing radius # of player, and check if the line connecting that point to the player passes through any material tagged as 'clif'. If it does, that area is shadow. If not it is clear
+    * holy shit snacks code for this sort of exists. See 'player sight' here: http://unity3d.com/learn/tutorials/projects/stealth/enemy-sight. You can cast a ray along a vector and see if it collids with something!
+
+Boats
+-----
+* can we attach guns to the boat as if they were parts of a 2D body?

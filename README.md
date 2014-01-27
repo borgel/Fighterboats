@@ -17,8 +17,9 @@ Resources
 =========
 * Unity time now
     * http://unity3d.com/learn/tutorials/projects
-* http://docs.unity3d.com/Documentation/Manual/ExternalVersionControlSystemSupport.html
-    * http://www.strichnet.com/using-git-with-3d-games/
+    * VCS
+        * http://docs.unity3d.com/Documentation/Manual/ExternalVersionControlSystemSupport.html
+        * http://www.strichnet.com/using-git-with-3d-games/
 * Networking/Multiplayer
     * http://docs.unity3d.com/Documentation/Manual/NetworkedMultiplayer.html
     * http://www.paladinstudios.com/2013/07/10/how-to-create-an-online-multiplayer-game-with-unity/
